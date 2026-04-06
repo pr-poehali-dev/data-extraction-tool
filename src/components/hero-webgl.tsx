@@ -114,8 +114,8 @@ const Scene = () => {
 }
 
 export const Hero3DWebGL = () => {
-  const titleWords = "Synapse AI".split(" ")
-  const subtitle = "Нейроинтерфейсы нового поколения."
+  const titleWords = "Reboot".split(" ")
+  const subtitle = "Сервисный центр в Волгограде. Ремонт, выкуп и продажа техники."
   const [visibleWords, setVisibleWords] = useState(0)
   const [subtitleVisible, setSubtitleVisible] = useState(false)
   const [delays, setDelays] = useState<number[]>([])
@@ -172,6 +172,28 @@ export const Hero3DWebGL = () => {
           >
             {subtitle}
           </div>
+        </div>
+        <div
+          className={`mt-8 flex flex-col sm:flex-row gap-4 justify-center pointer-events-auto ${subtitleVisible ? "fade-in-subtitle" : ""}`}
+          style={{
+            animationDelay: `${titleWords.length * 0.13 + 0.6 + subtitleDelay}s`,
+            opacity: subtitleVisible ? undefined : 0,
+          }}
+        >
+          <a
+            href="https://t.me/evgenymaer"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-red-500 hover:bg-red-600 text-white font-bold px-8 py-3 rounded-md text-base transition-colors duration-200 text-center"
+          >
+            Написать в Telegram
+          </a>
+          <a
+            href="tel:89996293193"
+            className="border border-red-500 text-red-400 hover:bg-red-500 hover:text-white font-bold px-8 py-3 rounded-md text-base transition-colors duration-200 text-center"
+          >
+            +7 999 629-31-93
+          </a>
         </div>
       </div>
 

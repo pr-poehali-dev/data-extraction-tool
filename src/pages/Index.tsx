@@ -17,14 +17,12 @@ export default function Index() {
       <main>
         <Hero3D />
         <FeaturesSection />
-        <section id="technology">
+        <section id="technology" className="hidden">
           <TechnologySection />
         </section>
         <ApplicationsTimeline />
         <AboutSection />
-        <section id="safety">
-          <SafetySection />
-        </section>
+        <SafetySection />
         <TestimonialsSection />
         <section id="faq">
           <FAQSection />
